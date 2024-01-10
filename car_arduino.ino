@@ -1,8 +1,7 @@
-const int groundpin = 18;             // analog input pin 4 -- ground
-const int powerpin = 19;              // analog input pin 5 -- voltage
+const int groundpin = 18;
+const int powerpin = 19; 
 
 const int ypin = A2;           
-
 
 const int acc = A0;
 const int brak = A1;
@@ -22,8 +21,6 @@ int c2 = 9;
 
 void setup() {
 
-  // initialize the serial communications:
-
   Serial.begin(9600);
 
   pinMode(groundpin, OUTPUT);
@@ -32,8 +29,6 @@ void setup() {
   digitalWrite(groundpin, LOW);
   digitalWrite(powerpin, HIGH);
 
-  //pinMode(acc, INPUT);
-  //pinMode(brak, INPUT);
   pinMode(a1, OUTPUT);
   pinMode(a2, OUTPUT);
 
@@ -132,5 +127,5 @@ void loop() {
 
 
 
-  delay(2000);
+  delay(500);
 }
